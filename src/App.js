@@ -4,11 +4,7 @@ import { Todo } from './Todo';
 
 class App extends Component {
   state = {
-    todos: [
-      {id:1, content:"Buy some milk"},
-      {id:2, content:"Analyze your partner"},
-      {id:3, content:"Revise Theory of computation"},
-    ]
+    todos: []
   }
   deleteTodo = id => {
     const todos = this.state.todos.filter(todo => {
